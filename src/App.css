@@ -1,5 +1,54 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Este CSS esta personalizado para las transiciones de los label en los input y icon */
+label {
+  transition: top 0.5s, color 0.5s;/* Transición para suavizar los cambios en top y color */
+}
+input:focus~label,
+input:valid~label {
+  top: -5px;
+  color: #0ef;
+}
+
+input {
+  transition: 0.5s, color 0.5s;/* Transición para suavizar los cambios en top y color */
+}
+input:focus,
+input:valid {
+  border-bottom-color: #0ef;
+}
+
+.i{
+  transition: 0.5s, color 0.5s;/* Transición para suavizar los cambios en top y color */
+}
+input:focus~.i,
+input:valid~.i {
+  color: #0ef;
+}
+
+button::before{
+  content:'';
+  position: absolute;
+  top: -100%;
+  left:0;
+  width: 100%;
+  height: 300%;
+  background: linear-gradient(#081b29, #0ef, #081b29, #0ef);
+  z-index: -1;
+  transition: .5s;
+}
+button:hover::before{
+  top: 0;
+}
+
+.skew-y-40 {
+  transform: skewY(40deg);
+}
+
+.transform-origin-bottom-right{
+  transform-origin: bottom right;
 }
