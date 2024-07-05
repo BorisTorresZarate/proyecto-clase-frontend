@@ -7,7 +7,10 @@ export default {
   ],
   theme: {
     extend: {
-      
+      boxShadow: {
+        'box-shadow-sombra': '0 0 25px #0ef',
+      },
+
     },
   },
   plugins: [],

@@ -52,3 +52,11 @@ button:hover::before{
 .transform-origin-bottom-right{
   transform-origin: bottom right;
 }
+.transform-origin-bottom-lef{
+  transform-origin: bottom left;
+}
+
+.ocultar{
+  display: flex;
+  display: none;
+}
